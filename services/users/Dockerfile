@@ -27,4 +27,4 @@ COPY . /usr/src/app
 # new
 # run server
 EXPOSE 5432
-CMD ["/usr/src/app/entrypoint.sh", "postgres", "ls"]
+CMD ["/usr/src/app/entrypoint.sh", "postgres"]

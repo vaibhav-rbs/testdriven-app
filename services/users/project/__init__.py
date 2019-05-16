@@ -20,9 +20,9 @@ class User(db.Model):
     email = db.Column(db.String(128), nullable=False)
     active = db.Column(db.Boolean(), default=True, nullable=False)
 
-    def __init__(Self, username, email):
+    def __init__(self, username, email):
         self.username = username
-        Self.email = email
+        self.email = email
         
 class UserPing(Resource):
     def get(self):

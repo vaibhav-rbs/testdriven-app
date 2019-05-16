@@ -2,6 +2,7 @@ import os
 class BaseConfig:
     TESTING = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SECRET_KEY = 'my_precious'  # new
 
 class DevelopmentConfig(BaseConfig):
     """Development configuration"""

@@ -14,7 +14,7 @@ services:
       - FLASK_ENV=development
       - APP_SETTINGS=project.config.DevelopmentConfig
       - DATABASE_URL=postgres://postgres:postgres@users-db:5432/users_dev
-      - DATABASE_TEST=postgres://postgres:postgres@users-db:5432/users_test
+      - DATABASE_TEST_URL=postgres://postgres:postgres@users-db:5432/users_test
     depends_on:
       - users-db
   

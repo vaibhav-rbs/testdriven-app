@@ -27,7 +27,7 @@ class User(db.Model):
 class UserPing(Resource):
     def get(self):
         return {
-            'status':'sucess',
+            'status':'success',
             'message':'pong!'
         }
 api.add_resource(UserPing, '/users/ping')
